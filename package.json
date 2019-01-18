@@ -1,0 +1,25 @@
+{
+  "name": "game_of_thrones_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klkirstyleeskl/week07_weekendHomework_GOT_js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/klkirstyleeskl/week07_weekendHomework_GOT_js/issues"
+  },
+  "homepage": "https://github.com/klkirstyleeskl/week07_weekendHomework_GOT_js#readme",
+  "devDependencies": {
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1"
+  }
+}
