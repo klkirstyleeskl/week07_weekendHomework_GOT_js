@@ -1,16 +1,12 @@
-const MakeUp= require('./models/makeup.js');
-
+const Makeup = require('./models/makeup.js');
+const MakeupListView = require('./views/makeup_list_view.js');
 
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('JavaScript Loaded');
+  console.log('javascript-loaded');
+  const listContainer = document.querySelector('#makeup-list');
+  const makeupListView = new MakeupListView(listContainer);
+  makeupListView.bindEvents();
 
-    // const makeupView = new MakeUp();
-    // makeupView.bindEvents();
-
-
-
-    const makeup = new MakeUp();
-    makeup.getData();
-
-
+  const makeup = new Makeup;
+  makeup.getData();
 });
