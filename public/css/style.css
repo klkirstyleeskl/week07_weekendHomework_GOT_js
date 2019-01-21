@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
 
 body{
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   color: black;
   padding: 100px;
 }
@@ -9,14 +11,22 @@ h1{
   color: 	#cc0052;
   font-size: 3.0em;
   text-decoration: underline;
+  font-family: 'Noto Sans', sans-serif;
+  text-align: center;
 
 }
 
 .photo{
   width: 300px;
+  border-radius: 2em;
 }
 
 .name{
   color: 	#cc0052;
   text-decoration: underline;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+ul{
+  font-family: 'Noto Sans', sans-serif;
 }
