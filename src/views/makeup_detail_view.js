@@ -6,6 +6,7 @@ MakeupDetailView.prototype.createMakeupDetail = function (makeup) {
 
   const name = document.createElement('h3');
   name.textContent = makeup.name;
+  name.className = 'name'
   makeupDetail.appendChild(name);
 
   const detailsList = document.createElement('ul');
@@ -21,6 +22,7 @@ MakeupDetailView.prototype.createMakeupDetail = function (makeup) {
 
   const photo = document.createElement('img');
   photo.src = makeup.image_link;
+  photo.className = 'photo';
   detailsList.appendChild(photo);
 
 

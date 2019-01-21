@@ -1,0 +1,22 @@
+
+body{
+  background-color: #f2f2f2;
+  color: black;
+  padding: 100px;
+}
+
+h1{
+  color: 	#cc0052;
+  font-size: 3.0em;
+  text-decoration: underline;
+
+}
+
+.photo{
+  width: 300px;
+}
+
+.name{
+  color: 	#cc0052;
+  text-decoration: underline;
+}

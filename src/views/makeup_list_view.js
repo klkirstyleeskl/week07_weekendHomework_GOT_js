@@ -6,14 +6,15 @@ const MakeupListView = function (container) {
 };
 
 MakeupListView.prototype.bindEvents = function () {
-  PubSub.subscribe('Makep:makeup-ready', (evt) => {
+  PubSub.subscribe('Makeup:makeup-ready', (evt) => {
+    console.log('makeup ready event fired');
     this.renderMakeupDetailViews(evt.detail);
   });
 };
 
-MakeupListView.prototype.renderMakeupDetailViews = function (makeups) {
-  makeups.forEach((makeup) => {
-    const makeupItem = this.createMunroListItem(makeup);
+MakeupListView.prototype.renderMakeupDetailViews = function (makeup) {
+  makeup.forEach((makeup) => {
+    const makeupItem = this.createMakeupListItem(makeup);
     this.container.appendChild(makeupItem);
   });
 };
